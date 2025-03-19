@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww36800\viewh19360\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Instagram Feed</title>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">\
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>\
+    <script src="https://www.jqueryscript.net/demo/Instagram-Photos-Without-API-instagramFeed/jquery.instagramFeed.js"></script>\
+    <style>\
+        .container \{\
+            max-width: 100%;\
+            margin: auto;\
+            text-align: center;\
+        \}\
+        .instagram_feed \{\
+            display: flex;\
+            flex-wrap: wrap;\
+            justify-content: center;\
+            gap: 10px;\
+        \}\
+        .instagram_feed img \{\
+            width: 100px;\
+            height: 100px;\
+            object-fit: cover;\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <div id="instagram-feed-demo" class="instagram_feed"></div>\
+    </div>\
+\
+    <script>\
+        $(document).ready(function()\{\
+            $.instagramFeed(\{\
+                'username': 'callofduty',\
+                'container': "#instagram-feed-demo",\
+                'display_profile': true,\
+                'display_biography': true,\
+                'display_gallery': true,\
+                'items': 9,\
+                'items_per_row': 3,\
+                'margin': 0.3\
+            \});\
+        \});\
+    </script>\
+</body>\
+</html>\
+}
